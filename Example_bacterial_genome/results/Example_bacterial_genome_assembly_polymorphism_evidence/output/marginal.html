@@ -1,0 +1,297 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.38.3&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 25 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_27.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_27.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;8523457</td><td align="center" class="junction_gene">23 (1.400)</td><td rowspan="2" align="center">5 (0.310)</td>
+<td rowspan="2" align="center">5/372</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">18.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(2938/3354&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_07732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_27.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">8523461&nbsp;=</td>
+<td align="center" class="junction_gene">23 (1.430)</td><td align="center" class="junction_gene">coding&nbsp;(2942/3354&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_07732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_26.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_26.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;8430633</td><td align="center" class="junction_gene">23 (1.400)</td><td rowspan="2" align="center">3 (0.190)</td>
+<td rowspan="2" align="center">3/372</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">11.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(584/2331&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>kdpB_3</i></td>
+<td class="junction_gene">Potassium&#8209;transporting ATPase ATP&#8209;binding subunit</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_26.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">8430637&nbsp;=</td>
+<td align="center" class="junction_gene">23 (1.430)</td><td align="center" class="junction_gene">coding&nbsp;(580/2331&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>kdpB_3</i></td>
+<td class="junction_gene">Potassium&#8209;transporting ATPase ATP&#8209;binding subunit</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_25.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_25.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;8073415</td><td align="center" class="junction_gene">13 (0.790)</td><td rowspan="2" align="center">3 (0.190)</td>
+<td rowspan="2" align="center">3/374</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">18.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(18/1092&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>fes</i></td>
+<td class="junction_gene">Enterochelin esterase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_25.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">8073420&nbsp;=</td>
+<td align="center" class="junction_gene">13 (0.800)</td><td align="center" class="junction_gene">coding&nbsp;(13/1092&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>fes</i></td>
+<td class="junction_gene">Enterochelin esterase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_24.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_24.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;6424699</td><td align="center" class="junction_gene">11 (0.670)</td><td rowspan="2" align="center">9 (0.550)</td>
+<td rowspan="2" align="center">9/376</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">45.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1389/1413&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>iucD_2</i></td>
+<td class="junction_gene">L&#8209;lysine N6&#8209;monooxygenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_24.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">6424703&nbsp;=</td>
+<td align="center" class="junction_gene">11 (0.680)</td><td align="center" class="junction_gene">coding&nbsp;(1393/1413&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>iucD_2</i></td>
+<td class="junction_gene">L&#8209;lysine N6&#8209;monooxygenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_23.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_23.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">5429488&nbsp;=</td><td align="center" class="junction_gene">18 (1.100)</td><td rowspan="2" align="center">4 (0.250)</td>
+<td rowspan="2" align="center">4/364</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">18.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(332/468&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>bcp</i></td>
+<td class="junction_gene">Putative peroxiredoxin</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_23.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;5429484</td>
+<td align="center" class="junction_gene">18 (1.140)</td><td align="center" class="junction_gene">coding&nbsp;(336/468&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>bcp</i></td>
+<td class="junction_gene">Putative peroxiredoxin</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_22.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_22.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;4370673</td><td align="center" class="junction_gene">20 (1.220)</td><td rowspan="2" align="center">4 (0.250)</td>
+<td rowspan="2" align="center">4/374</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">16.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(937/1107&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_03953</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_22.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">4370677&nbsp;=</td>
+<td align="center" class="junction_gene">20 (1.230)</td><td align="center" class="junction_gene">coding&nbsp;(941/1107&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_03953</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_21.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_21.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;4047554</td><td align="center" class="junction_gene">20 (1.220)</td><td rowspan="2" align="center">4 (0.250)</td>
+<td rowspan="2" align="center">4/376</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">17.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+5400/+446)</td>
+<td align="center" class="junction_gene"><i>lnrK_8/IKELMNLG_03651</i></td>
+<td class="junction_gene">Transcriptional regulatory protein LnrK/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_21.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">4047562&nbsp;=</td>
+<td align="center" class="junction_gene">19 (1.170)</td><td align="center" class="junction_gene">intergenic&nbsp;(+5408/+438)</td>
+<td align="center" class="junction_gene"><i>lnrK_8/IKELMNLG_03651</i></td>
+<td class="junction_gene">Transcriptional regulatory protein LnrK/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_20.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_20.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;3961975</td><td align="center" class="junction_gene">18 (1.100)</td><td rowspan="2" align="center">3 (0.190)</td>
+<td rowspan="2" align="center">3/372</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">14.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(23/468&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_03563</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_20.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">3961979&nbsp;=</td>
+<td align="center" class="junction_gene">17 (1.060)</td><td align="center" class="junction_gene">coding&nbsp;(19/468&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>IKELMNLG_03563</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_19.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_19.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">3830737&nbsp;=</td><td align="center" class="junction_gene">17 (1.040)</td><td rowspan="2" align="center">3 (0.190)</td>
+<td rowspan="2" align="center">3/370</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">15.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1158/2409&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ctpE</i></td>
+<td class="junction_gene">Calcium&#8209;transporting ATPase CtpE</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_19.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;3830733</td>
+<td align="center" class="junction_gene">16 (1.000)</td><td align="center" class="junction_gene">coding&nbsp;(1154/2409&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ctpE</i></td>
+<td class="junction_gene">Calcium&#8209;transporting ATPase CtpE</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_18.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_18.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">=&nbsp;3497335</td><td align="center" class="junction_gene">18 (1.100)</td><td rowspan="2" align="center">5 (0.310)</td>
+<td rowspan="2" align="center">5/372</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">21.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(2545/3486&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rpoB</i></td>
+<td class="junction_gene">DNA&#8209;directed RNA polymerase subunit beta</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_18.html">?</a></td><td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">3497339&nbsp;=</td>
+<td align="center" class="junction_gene">18 (1.120)</td><td align="center" class="junction_gene">coding&nbsp;(2541/3486&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rpoB</i></td>
+<td class="junction_gene">DNA&#8209;directed RNA polymerase subunit beta</td>
+</tr>
+</table>
+</body></html>

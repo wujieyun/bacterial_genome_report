@@ -1,0 +1,9 @@
+10.1093/bioinformatics/btw354                      # MultiQC
+10.1093/bioinformatics/btx699                      # mosdepth
+10.1093/bioinformatics/btt086                      # quast
+10.1093/bioinformatics/btu153                      # prokka
+10.1093/bioinformatics/bty149                      # nanostat
+10.1093/bioinformatics/btp352                      # samtools
+10.7717/peerj-cs.104                               # bracken
+10.1186/gb-2014-15-3-r46                           # kraken
+

@@ -1,0 +1,2 @@
+Sample	contig_1
+consensus	20.050000000000004

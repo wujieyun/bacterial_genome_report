@@ -1,0 +1,4 @@
+| File Path | # Sequences | Total Length | Min Length | Avg Length | Max Length |   Median   |     N50    |
+|-----------|-------------|--------------|------------|------------|------------|------------|------------|
+| Example_bacterial_genome.fastq | 118238 | 191412593 | 5 | 1618.9 | 193350 | 550.0 | 4330 |
+| trimmed.fastq | 44433 | 165663912 | 1000 | 3728.4 | 193350 | 2451.0 | 5233 |

@@ -1,0 +1,26 @@
+2025-05-19 17:25:37,353 NanoPlot 1.43.0 started with arguments Namespace(threads=4, verbose=False, store=False, raw=False, huge=False, outdir='all_results/Example_bacterial_genome/results/NanoPlot_report_raw/', no_static=False, prefix='', tsv_stats=False, only_report=False, info_in_report=False, maxlength=None, minlength=None, drop_outliers=True, downsample=None, loglength=True, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=False, title=None, font_scale=1, dpi=100, hide_stats=False, fastq=['data/Example_bacterial_genome.fastq'], fasta=None, fastq_rich=None, fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='all_results/Example_bacterial_genome/results/NanoPlot_report_raw/')
+2025-05-19 17:25:37,353 Python version is: 3.11.6 (main, Nov 20 2023, 12:22:12) [GCC 12.3.0]
+2025-05-19 17:25:37,375 Nanoget: Starting to collect statistics from plain fastq file.
+2025-05-19 17:25:52,761 Reduced DataFrame memory usage from 1.8042945861816406Mb to 1.8042945861816406Mb
+2025-05-19 17:25:52,777 Nanoget: Gathered all metrics of 118238 reads
+2025-05-19 17:25:52,833 Calculated statistics
+2025-05-19 17:25:52,834 Using sequenced read lengths for plotting.
+2025-05-19 17:25:52,842 Hidding 3264 length outliers in length plots.
+2025-05-19 17:25:52,847 Using log10 scaled read lengths.
+2025-05-19 17:25:52,856 NanoPlot:  Valid color #4CB391.
+2025-05-19 17:25:52,856 NanoPlot:  Valid colormap Greens.
+2025-05-19 17:25:52,863 NanoPlot:  Creating length plots for Read length.
+2025-05-19 17:25:52,863 NanoPlot:  Using 114974 reads maximum of 9097bp.
+2025-05-19 17:26:04,904 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/WeightedHistogramReadlength  as png (or png for --legacy)
+2025-05-19 17:26:05,626 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/WeightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2025-05-19 17:26:06,308 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/Non_weightedHistogramReadlength  as png (or png for --legacy)
+2025-05-19 17:26:07,021 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/Non_weightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2025-05-19 17:26:19,843 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/Yield_By_Length  as png (or png for --legacy)
+2025-05-19 17:26:19,843 Created length plots
+2025-05-19 17:26:19,850 NanoPlot: Creating Read lengths vs Average read quality plots using 114974 reads.
+2025-05-19 17:26:23,075 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/LengthvsQualityScatterPlot_kde  as png (or png for --legacy)
+2025-05-19 17:26:23,081 NanoPlot: Creating Read lengths vs Average read quality plots using 114974 reads.
+2025-05-19 17:26:25,500 Saved all_results/Example_bacterial_genome/results/NanoPlot_report_raw/LengthvsQualityScatterPlot_loglength_kde  as png (or png for --legacy)
+2025-05-19 17:26:25,501 Created LengthvsQual plot
+2025-05-19 17:26:25,501 Writing html report.
+2025-05-19 17:26:26,067 Finished!

@@ -1,0 +1,2 @@
+Sample	N50 (Kbp)	L50 (K)	Largest contig (Kbp)	Length (Mbp)
+consensus	8571.456	0.001	8571.456	8.571456

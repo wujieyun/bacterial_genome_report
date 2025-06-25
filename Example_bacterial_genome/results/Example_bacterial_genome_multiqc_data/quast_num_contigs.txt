@@ -1,0 +1,2 @@
+Sample	>= 50000 bp
+consensus	1

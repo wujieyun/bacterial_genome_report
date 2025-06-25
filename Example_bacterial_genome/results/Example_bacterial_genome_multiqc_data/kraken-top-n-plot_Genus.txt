@@ -1,0 +1,2 @@
+Sample	Escherichia	Homo	Microbacterium	Streptomyces	Salmonella	Other	Unclassified
+kraken2_report_unmapped	35172	926	322	207	93	1362	1002

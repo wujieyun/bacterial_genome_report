@@ -1,0 +1,2 @@
+Sample	Bacteria	Eukaryota	Other	Unclassified
+kraken2_report_unmapped	35929	926	1227	1002

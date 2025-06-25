@@ -1,0 +1,2 @@
+Sample	organism	contigs	bases	CDS	tRNA	tmRNA
+unknown	Streptomyces unknown	1	8571456	7690	91	1

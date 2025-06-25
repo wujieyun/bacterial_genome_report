@@ -1,0 +1,2 @@
+Sample	R	D	P	C	O	F	G
+kraken2_report_assembly	{'root': 1}	{'Bacteria': 1}	{'Actinobacteria': 1}	{'Actinobacteria': 1}	{'Streptomycetales': 1}	{'Streptomycetaceae': 1}	{'Streptomyces': 1}

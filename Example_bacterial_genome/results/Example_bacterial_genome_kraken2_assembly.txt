@@ -1,0 +1,8 @@
+Domain	Bacteria
+Phylum	Actinobacteria
+Class	Actinobacteria
+Order	Streptomycetales
+Family	Streptomycetaceae
+Genus	Streptomyces
+Species	unknown
+Strain	unknown

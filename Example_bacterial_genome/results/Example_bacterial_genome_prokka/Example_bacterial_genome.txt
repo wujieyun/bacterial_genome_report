@@ -1,0 +1,6 @@
+organism: Streptomyces unknown unknown 
+contigs: 1
+bases: 8571456
+CDS: 7690
+tRNA: 91
+tmRNA: 1

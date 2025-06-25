@@ -1,0 +1,5 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:contig_1	LN:8571456
+@PG	ID:minimap2	PN:minimap2	CL:minimap2 -ax map-ont -t 4 all_results/Example_bacterial_genome/results/consensus.fasta data/Example_bacterial_genome.fastq	VN:2.26-r1175
+@PG	ID:samtools	PN:samtools	CL:samtools view -b -@ 4 -	PP:minimap2	VN:1.18
+@PG	ID:samtools.1	PN:samtools	CL:samtools sort -@ 4 -o all_results/Example_bacterial_genome/results/consensus.bam -	PP:samtools	VN:1.18

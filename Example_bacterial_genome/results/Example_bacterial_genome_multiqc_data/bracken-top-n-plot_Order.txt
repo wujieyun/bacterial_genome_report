@@ -1,0 +1,2 @@
+Sample	Streptomycetales
+kraken2_report_assembly	1

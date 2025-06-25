@@ -1,0 +1,15 @@
+| SEQUENCE | START | END | STRAND | GENE |
+|---|---|---|---|---|
+| contig_1 | 177791 | 178969 | - | cmlR |
+| contig_1 | 321320 | 322413 | - | cmlV |
+| contig_1 | 1908361 | 1909890 | - | fusH |
+| contig_1 | 1929871 | 1931127 | - | mgt |
+| contig_1 | 1931124 | 1931906 | - | erm(O) |
+| contig_1 | 4400605 | 4401381 | - | aac(3)-IVa |
+| contig_1 | 4689308 | 4689916 | - | vanX-Sc |
+| contig_1 | 4689913 | 4690953 | - | vanA-Sc |
+| contig_1 | 4690964 | 4691977 | - | vanH-Sc |
+| contig_1 | 4692072 | 4693265 | - | vanK-Sc |
+| contig_1 | 4693456 | 4694448 | - | vanJ |
+| contig_1 | 4694652 | 4695348 | + | vanR-O |
+| contig_1 | 7752739 | 7754646 | - | otr(A) |

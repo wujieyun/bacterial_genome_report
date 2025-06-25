@@ -1,0 +1,10 @@
+Module	Section	Sample Name	Source
+Mosdepth	summary	consensus	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/mosdepth/consensus.mosdepth.summary.txt
+Mosdepth	genome_results	consensus	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/mosdepth/consensus.mosdepth.global.dist.txt
+QUAST	all_sections	consensus	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/report.tsv
+Prokka	all_sections	unknown	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/prokka/Example_bacterial_genome.txt
+NanoStat	all_sections	NanoStats	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/NanoPlot_report_trimmed/NanoStats.txt
+Samtools	flagstat	consensus.stat	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/reads_stats/consensus.stat
+Bracken	all_sections	kraken2_report_assembly	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/kraken2_report_assembly.txt
+Kraken	all_sections	kraken2_report_unmapped	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/kraken2_report_unmapped.txt
+Filtlong	all_sections	pipeline	/scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/.pipeline.log

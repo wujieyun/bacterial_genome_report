@@ -1,0 +1,2 @@
+Sample	Enterobacterales	Primates	Micrococcales	Streptomycetales	Bacillales	Other	Unclassified
+kraken2_report_unmapped	35269	926	362	207	22	1296	1002

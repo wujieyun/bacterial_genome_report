@@ -1,0 +1,4 @@
+Mon May 19 17:46:40 2025
+
+breseq -x -j 16 --polymorphism-prediction -r all_results/Example_bacterial_genome/results/prokka/Example_bacterial_genome.gbk -o all_results/Example_bacterial_genome/results/breseq/ all_results/Example_bacterial_genome/results/trimmed.fastq
+

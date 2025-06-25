@@ -1,0 +1,86 @@
+/opt/nesi/CS400_centos7_bdw/QUAST/5.2.0-foss-2023a/bin/quast -m 1 --bam all_results/Example_bacterial_genome/results/consensus.bam all_results/Example_bacterial_genome/results/consensus.fasta -o all_results/Example_bacterial_genome/results/quast_results/
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.11.6
+  CPUs number: 8
+
+Started: 2025-05-19 17:36:37
+
+Logging to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/quast.log
+NOTICE: Maximum number of threads is set to 2 (use --threads option to set it manually)
+
+CWD: /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 1, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  all_results/Example_bacterial_genome/results/consensus.fasta ==> consensus
+
+2025-05-19 17:36:45
+Running Reads analyzer...
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.24). Please make sure that you use an actual version of software.
+  Logging to files /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.log and /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err...
+/scale_wlg_persistent/filesets/opt_nesi/CS400_centos7_bdw/QUAST/5.2.0-foss-2023a/lib/python3.11/site-packages/quast_libs/sambamba/sambamba_linux \
+view -H all_results/Example_bacterial_genome/results/consensus.bam > all_results/Example_bacterial_genome/results/quast_results/reads_stats/consensus.bam.header \
+2>> all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err
+/scale_wlg_persistent/filesets/opt_nesi/CS400_centos7_bdw/QUAST/5.2.0-foss-2023a/lib/python3.11/site-packages/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 all_results/Example_bacterial_genome/results/consensus.bam > all_results/Example_bacterial_genome/results/quast_results/reads_stats/consensus.stat \
+2>> all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err
+/opt/nesi/CS400_centos7_bdw/BEDTools/2.31.1-GCC-12.3.0/bin/bedtools bamtobed -i all_results/Example_bacterial_genome/results/consensus.bam \
+> all_results/Example_bacterial_genome/results/quast_results/reads_stats/temp_output/consensus.bed \
+2>> all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n all_results/Example_bacterial_genome/results/quast_results/reads_stats/temp_output/consensus.bed \
+> all_results/Example_bacterial_genome/results/quast_results/reads_stats/temp_output/consensus.sorted.bed \
+2>> all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err
+/opt/nesi/CS400_centos7_bdw/BEDTools/2.31.1-GCC-12.3.0/bin/bedtools genomecov -i all_results/Example_bacterial_genome/results/quast_results/reads_stats/temp_output/consensus.sorted.bed \
+-g all_results/Example_bacterial_genome/results/quast_results/quast_corrected_input/consensus.fasta.fai \
+> all_results/Example_bacterial_genome/results/quast_results/reads_stats/temp_output/consensus.genomecov \
+2>> all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_stats.err
+  Creating total report...
+    saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/reads_stats/reads_report.txt, reads_report.tsv, and reads_report.tex
+Done.
+
+2025-05-19 17:36:59
+Running Basic statistics processor...
+  Contig files: 
+    consensus
+  Calculating N50 and L50...
+    consensus, N50 = 8571456, L50 = 1, auN = 8571456.0, Total length = 8571456, GC % = 72.10, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/basic_stats/GC_content_plot.pdf
+  Drawing consensus GC content plot...
+    saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/basic_stats/consensus_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2025-05-19 17:37:11
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2025-05-19 17:37:12
+RESULTS:
+  Text versions of total report are saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/report.html
+  PDF version (tables and plots) is saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/report.pdf
+  Icarus (contig browser) is saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/icarus.html
+  Log is saved to /scale_wlg_nobackup/filesets/nobackup/uoa03387/AG1491_Rory/all_results/Example_bacterial_genome/results/quast_results/quast.log
+
+Finished: 2025-05-19 17:37:12
+Elapsed time: 0:00:34.459457
+NOTICEs: 2; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

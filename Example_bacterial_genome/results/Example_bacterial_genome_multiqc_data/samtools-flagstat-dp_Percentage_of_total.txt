@@ -1,0 +1,2 @@
+Sample	Total Reads	Total Passed QC	Mapped	Secondary Alignments	Supplementary Alignments	Duplicates	Paired in Sequencing	Properly Paired	Self and mate mapped	Singletons	Mate mapped to diff chr	Diff chr (mapQ >= 5)
+consensus.stat	100.0	100.0	67.84242095129959	2.465875151186039	0.25012547412764624	0.0	0.0	0.0	0.0	0.0	0.0	0.0

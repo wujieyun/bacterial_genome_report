@@ -1,0 +1,2 @@
+Sample	Bacteria
+kraken2_report_assembly	1

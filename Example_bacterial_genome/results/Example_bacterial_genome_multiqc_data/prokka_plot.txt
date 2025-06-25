@@ -1,0 +1,2 @@
+Sample	CDS	tRNA	tmRNA
+unknown	7690	91	1

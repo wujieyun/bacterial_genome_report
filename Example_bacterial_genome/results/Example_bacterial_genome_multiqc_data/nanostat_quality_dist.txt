@@ -1,0 +1,2 @@
+Sample	Reads >Q30	Reads Q25-30	Reads Q20-25	Reads Q15-20	Reads Q10-15	Reads <Q10
+NanoStats	39	2652	23430	16922	1222	168

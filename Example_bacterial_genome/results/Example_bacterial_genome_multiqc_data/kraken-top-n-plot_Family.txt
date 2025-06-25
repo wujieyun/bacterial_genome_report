@@ -1,0 +1,2 @@
+Sample	Enterobacteriaceae	Hominidae	Microbacteriaceae	Streptomycetaceae	Bacillaceae	Other	Unclassified
+kraken2_report_unmapped	35268	926	325	207	19	1337	1002
